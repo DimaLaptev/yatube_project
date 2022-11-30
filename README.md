@@ -3,7 +3,7 @@
 ### Description
 Communicate, watch publications, like - lead a full life online together with Yatube.
 ### Technologies
-Python 3.79
+Python 3.9
 Django 2.2.19
 ### Run the project in dev-mode
 - Install and activate venv
