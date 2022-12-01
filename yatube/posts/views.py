@@ -1,10 +1,15 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 
 # Create your views here.
 def index(request):
-    return HttpResponse('This is homepage, sun.')
+    template = 'posts/index.html'
+    text_main = 'Это главная страница проекта Yatube'
+    context: dict = {'text_main': text_main}
+    return render(request, template, context)
 
 def group_posts(request, slug):
-    return HttpResponse(f'Post {slug} are verified by RosKomControl!')
+    template = 'posts/group_list.html'
+    text_group = 'Здесь будет информация о группах проекта Yatube'
+    context: dict = {'text_group': text_group}
+    return render(request, template, context)
