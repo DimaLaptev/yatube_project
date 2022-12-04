@@ -16,5 +16,6 @@ def group_posts(request, slug):
     context: dict = {
         'group': group,
         'posts': posts,
+        'title': 'Записи сообщества ' + f'"{group.title}"'
     }
     return render(request, 'posts/group_list.html', context)
